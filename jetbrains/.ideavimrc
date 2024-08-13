@@ -1,0 +1,33 @@
+let mapleader=" "
+
+"" -- Suggested options --
+set relativenumber
+set scrolloff=5
+set incsearch
+
+"" -- Plugins --
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-surround'
+Plug 'machakann/vim-highlightedyank'
+Plug 'vim-matchit'
+
+" -- Mappings --
+
+" Tab
+map <leader>h <Action>(PreviousTab)
+map <leader>l <Action>(NextTab)
+map mh <action>(com.mikejhill.intellij.movetab.actions.MoveTabLeft)
+map ml <action>(com.mikejhill.intellij.movetab.actions.MoveTabRight)
+
+" Actions
+
+map <leader>r <Action>(RenameElement)
+map \d <Action>(Run)
+map \D <Action>(Debug)
+map \x <Action>(Stop)
+map \b <Action>(ToggleLineBreakpoint)
+map \r <Action>(ReformatCode)
+map \s <Action>(SaveAll)
+
+map <leader>b <Action>(ToggleBookmarkWithMnemonic)
+map <leader>B <Action>(ShowBookmarks)
