@@ -1,0 +1,65 @@
+{
+  "types": {
+    "✨Feat": {
+      "description": "신규 기능을 추가하는 경우"
+    },
+    "\uD83D\uDC27Experiment": {
+      "description": "실험적인 기능을 추가하는 경우 (for 퍼펭팀…)"
+    },
+    "\uD83D\uDC77Chore": {
+      "description": "빌드 작업, 패키지 관리자 구성의 업데이트 등 코드 변경이 없는 경우"
+    },
+    "\uD83D\uDD00Merge": {
+      "description": "코드 병합"
+    },
+    "\uD83D\uDC1BFix": {
+      "description": "버그, 이슈 등 잘못된 무언가를 고치는 경우"
+    },
+    "\uD83D\uDD25Remove": {
+      "description": "코드나 파일을 삭제하는 경우"
+    },
+    "➕Add": {
+      "description": "새 코드나 파일을 추가하는 경우"
+    },
+    "\uD83C\uDFA8Implement": {
+      "description": "무언가를 구현한 경우, 구현한 대상을 강조할 때 사용 (Add와 비슷하지만 좀 더 큰 코드 단위 추가에 자주 쓰임)"
+    },
+    "\uD83D\uDCE6Use": {
+      "description": "구현을 위해 무언가를 사용한 경우, 특정 라이브러리나 프레임워크를 사용하기 위한 코드를 추가하는 경우"
+    },
+    "♻\uFE0FRefactor": {
+      "description": "코드를 리팩터링 하는 경우"
+    },
+    "♻\uFE0FUpdate": {
+      "description": "무언가를 업데이트하는 경우"
+    },
+    "\uD83D\uDCDDDocs": {
+      "description": "문서를 수정하는 경우"
+    },
+    "⚡\uFE0FImprove": {
+      "description": "성능, 구조, 접근성 등을 개선하는 경우"
+    },
+    "\uD83D\uDE9AMove": {
+      "description": "코드나 파일을 이동하는 경우"
+    },
+    "\uD83D\uDCA1Comment": {
+      "description": "필요한 주석 추가 및 변경"
+    },
+    "\uD83D\uDEE0\uFE0FStyle": {
+      "description": "코드 Formatting, 세미콜론 누락, console 삭제 등 코드 변경이 없는 경우"
+    },
+    "\uD83D\uDC84Design": {
+      "description": "CSS 등 사용자 UI 디자인 변경"
+    },
+    "\uD83D\uDE91Hotfix": {
+      "description": "급하게 치명적인 버그를 고쳐야하는 경우"
+    },
+    "\uD83D\uDEA7Wip": {
+      "description": "진행 중인 작업 (Work In Progress)"
+    },
+    "⏪Revert": {
+      "description": "변경 사항 되돌리기"
+    }
+  },
+  "footerTypes": []
+}
