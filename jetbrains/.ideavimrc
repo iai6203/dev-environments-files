@@ -31,3 +31,4 @@ map \s <Action>(SaveAll)
 
 map <leader>b <Action>(ToggleBookmarkWithMnemonic)
 map <leader>B <Action>(ShowBookmarks)
+map <leader>p <Action>(ManageRecentProjects)
