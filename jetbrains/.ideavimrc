@@ -21,14 +21,8 @@ map ml <action>(com.mikejhill.intellij.movetab.actions.MoveTabRight)
 
 " Actions
 
-map <leader>r <Action>(RenameElement)
-map \d <Action>(Run)
-map \D <Action>(Debug)
-map \x <Action>(Stop)
-map \b <Action>(ToggleLineBreakpoint)
-map \r <Action>(ReformatCode)
-map \s <Action>(SaveAll)
+map <leader>r <Action>(ReformatCode)
+map <leader>s <Action>(SaveAll)
 
-map <leader>b <Action>(ToggleBookmarkWithMnemonic)
-map <leader>B <Action>(ShowBookmarks)
+map <leader>b <Action>(ShowBookmarks)
 map <leader>p <Action>(ManageRecentProjects)
