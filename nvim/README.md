@@ -1,5 +1,10 @@
-# Neovim
+# 💤 LazyVim
 
-개인적으로 사용하던 설정은 폐기하고 Lazyvim으로 옮겨갔습니다.
+A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
+Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
 
-[Lazyvim](https://www.lazyvim.org/)
+# Custom Keymaps
+
+## File Explorer
+
+- "h": Focus Parent Node
