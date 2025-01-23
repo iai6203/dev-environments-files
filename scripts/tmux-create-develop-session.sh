@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Usage: ./tmux-create-develop-session.sh -t <session_name> <directory_path>
+# Usage: ./script.sh -t <session_name> <directory_path>
 
 # Initialize default variables
 session_name=""
@@ -48,7 +48,8 @@ if [ ! -d "$dir_path" ]; then
   exit 1
 fi
 
-# tmux window name
+# tmux window names
+main_window="zsh"
 container_window="container"
 
 # Check if the tmux session already exists
@@ -56,7 +57,8 @@ if tmux has-session -t "$session_name" 2>/dev/null; then
   echo "Attaching to existing tmux session '$session_name'."
 else
   echo "Creating a new tmux session named '$session_name' in directory '$dir_path'."
-  tmux new-session -d -s "$session_name" -c "$dir_path" # Create a new session
+  # Create a new session with the first window named "zsh"
+  tmux new-session -d -s "$session_name" -c "$dir_path" -n "$main_window"
 fi
 
 # Add a window named "container" if it doesn't already exist
@@ -66,6 +68,9 @@ else
   echo "Adding a new window named '$container_window' to session '$session_name'."
   tmux new-window -t "$session_name" -n "$container_window" -c "$dir_path"
 fi
+
+# Switch to the "zsh" window before attaching
+tmux select-window -t "$session_name:$main_window"
 
 # Attach to the tmux session
 tmux attach-session -t "$session_name"
