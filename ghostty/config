@@ -1,5 +1,5 @@
 shell-integration-features = no-cursor
 cursor-style = block
 
-background-opacity = 0.4
+background-opacity = 0.6
 background-blur = true
