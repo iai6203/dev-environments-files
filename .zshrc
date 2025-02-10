@@ -78,6 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  fzf
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
@@ -107,20 +108,18 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-# Create a new tmux session with a given name.
-# Usage: tn <session_name>
+alias tl="tmux ls"
+alias ta="tmux attach -t"
 alias tn="tmux new -s"
 
-# Attach to an existing tmux session by name.
-# Usage: ta <session_name>
-alias ta="tmux attach -t"
+alias lg="lazygit"
+alias lzd="lazydocker"
 
+alias dc="devcontainer"
+alias dcc="devcontainer --workspace-folder ."
 
-
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-export PATH="/usr/local/opt/node@16/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+. "$HOME/.local/bin/env"
