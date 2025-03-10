@@ -1,4 +1,8 @@
 customCommands:
+  - key: ''
+    description: 'Open remote repository'
+    context: 'status'
+    command: 'open {{(index .SelectedRemote.Urls 0)}}'
   - key: 'e'
     description: 'Edit config file'
     context: 'status'
