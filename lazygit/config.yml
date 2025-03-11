@@ -8,3 +8,15 @@ customCommands:
     context: 'status'
     command: 'nvim ~/Library/Application\ Support/lazygit/config.yml'
     subprocess: true
+
+  - key: 'X'
+    description: 'custom commands'
+    commandMenu:
+    - key: ''
+      context: 'commits'
+      description: 'Ammend commit date attribute to the current date'
+      command: 'git commit --allow-empty --only --no-edit --amend "--date=$(date -R)"'
+      prompts:
+      - type: 'confirm'
+        title: 'Are you sure?'
+        body: 'This operation performs an amend on a specific commit.'
