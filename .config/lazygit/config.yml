@@ -9,6 +9,12 @@ customCommands:
     command: 'nvim ~/Library/Application\ Support/lazygit/config.yml'
     subprocess: true
 
+  - key: 'C'
+    command: 'cz commit'
+    context: 'files'
+    loadingText: 'opening commitizen commit tool'
+    subprocess: true
+
   - key: 'X'
     description: 'custom commands'
     commandMenu:
