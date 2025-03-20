@@ -25,4 +25,5 @@ map <leader>r <Action>(ReformatCode)
 map <leader>s <Action>(SaveAll)
 
 map <leader>b <Action>(ShowBookmarks)
+map <leader>B <Action>(ToggleBookmarkWithMnemonic)
 map <leader>p <Action>(ManageRecentProjects)
